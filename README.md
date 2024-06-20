@@ -6,18 +6,23 @@
 
 ### Дублирующиеся запросы
 
-Запрос к graphql повторяется 9 раз
+Запрос к graphql повторяется 9 раз.
 
-<img src="./img/network-duplicates.png" style="max-width: 900px" alt="">
+<img src="./img/network-duplicates.png" style="max-width: 850px" alt="">
 
 ### Лишний размер ресурса
 
-Можно отметить ресурс `my-recipes.js?_t=2511940e`, который имеет большой размер и блокирует рендеринг.
+JS скрипты имеют большой размер, т.к. не разбиты на chunks.
+Стоит отметить, что в топе больших скриптов всего 2 написанных на сайте: `my-repices.js_t=2511940e` и
+`chunk-07046ba1.js?_t=45c65d99`.
+Наиболее большие скрипты приведены ниже.
+
+<img src="./img/network-oversize-js.png" style="max-width: 850px" alt="">
 
 Изображения имеют большой размер, т.к. используются неоптимизированный формат (как .png или .jpg).
 Наиболее большие изображения также представлены ниже.
 
-<img src="./img/network-oversize.png" style="max-width: 900px" alt="">
+<img src="./img/network-oversize-img.png" style="max-width: 850px" alt="">
 
 ### Ресурсы блокирующие отображение
 
