@@ -2,6 +2,8 @@
 
 ## Network анализ
 
+### Запись network - `./rigla-network.har`
+
 ### Дублирующиеся запросы
 
 Запрос к graphql повторяется 9 раз
@@ -53,8 +55,6 @@ Largest Contentful Paint (LCP) происходит на изображении:
 <img src="./img/perfomance-summary.png" style="max-width: 400px" alt="">
 
 ## Coverage анализ
-
-### Запись Coverage - `./rigla-coverage.json`
 
 ### Скриншот вкладки после открытия страницы
 <img src="./img/coverage-screenshot.png" style="max-width: 900px" alt="">
